@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: vote
-  lables:
+  labels:
     app: vote
 spec: 
   containers:
@@ -11,4 +11,3 @@ spec:
       ports:
         - containerPort: 80
           name: vote
-          
