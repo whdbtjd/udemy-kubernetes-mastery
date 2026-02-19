@@ -8,6 +8,11 @@ spec:
   containers:
     - name: postgres
       image: postgres:15-apline
+      env:
+        - name: POSTGRES_USER
+          value: postgres
+        - name: POSTGRES_PASSWORD
+          value: postgres
       ports:
         - containerPort: 5432
           name: postgres
